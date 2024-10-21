@@ -1,0 +1,35 @@
+Sure! Here are some basic Git viva questions with short answers:
+
+### Basic Git Questions
+
+1. *What is Git?*  
+   A distributed version control system for tracking changes in source code.
+
+2. *What is a repository (repo)?*  
+   A storage space for your project, which can be local or remote.
+
+3. *What is a commit?*  
+   A snapshot of changes made to the codebase, along with a message describing the changes.
+
+4. *What is branching in Git?*  
+   Creating a parallel version of the codebase to work on features independently.
+
+5. **What is the purpose of the git clone command?**  
+   To create a copy of a remote repository on your local machine.
+
+6. **What is the difference between git pull and git fetch?**  
+   git fetch downloads changes from a remote repo without merging, while git pull fetches and merges changes.
+
+7. *What is a merge conflict?*  
+   A situation where changes in two branches conflict and Git cannot automatically merge them.
+
+8. **What is the purpose of the .gitignore file?**  
+   To specify files and directories that Git should ignore and not track.
+
+9. *What is a remote in Git?*  
+   A version of the repository hosted on a server, such as GitHub or GitLab.
+
+10. *How do you revert a commit?*  
+    Using the git revert <commit> command to create a new commit that undoes changes.
+
+Let me know if you need more information or specific topics!
