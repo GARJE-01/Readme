@@ -1,0 +1,121 @@
+1.
+1.Create a GIT Repository:
+cd /d/code
+git init
+
+2.Check the status of GIT Repository:
+git status
+
+3. Create User in GIT (Set User Configuration):
+git config --global user.name "John Doe"
+git config --global user.email "john@example.com"
+
+4.List all users in GIT
+git config --global user.name
+git config --global user.email
+git config --global --list
+
+5.Put files in repository to staging area
+git add <filename>     # For a single file
+git add .              # To add all files
+
+6. Commit the Files Added to Staging Area:
+git commit -m "Initial commit"
+
+
+7. Demonstrate git log Command:
+git log
+
+5. Pull GIT Remote Repository (GitHub) to Local Repository:
+git remote add origin https://github.com/johndoe/my-repo.git
+git pull origin main
+
+6. Create and Switch to a New Branch 
+git checkout -b  name
+
+ 7.Send GIT Local Repository to Remote Repository (GitHub):
+Create a repository on GitHub:
+
+Go to GitHub and create a new repository.
+Copy the repository URL (e.g., https://github.com/yourusername/my-repo.git).
+Link the local repository to the remote repository:
+
+Command:
+bash
+Copy code
+git remote add origin https://github.com/yourusername/my-repo.git
+
+8.Push Local Repository to Remote Repository:
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+9.Pull GIT Remote Repository (GitHub) to Local Repository:
+git clone https://github.com/yourusername/remote-repo.git
+git pull origin main
+git branch
+git checkout -b kedarbanch
+git add .
+git commit -m "Your commit message"
+git push origin kedarbanch
+
+
+
+####################################################################
+sujal@LAPTOP-B09NOKLB MINGW64 ~ (master)
+$ git clone https://github.com/Sujay-85/fantasy-contest-participation-interface.git
+Cloning into 'fantasy-contest-participation-interface'...
+remote: Enumerating objects: 22, done.
+remote: Counting objects: 100% (22/22), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 22 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (22/22), 17.33 KiB | 5.78 MiB/s, done.
+Resolving deltas: 100% (7/7), done.
+
+sujal@LAPTOP-B09NOKLB MINGW64 ~ (master)
+$ cd fantasy-contest-participation-interface
+
+sujal@LAPTOP-B09NOKLB MINGW64 ~/fantasy-contest-participation-interface (main)
+$ git remote add upstream https://github.com/ashishghadigaonkar/fantasy-contest-participation-interface.git
+
+sujal@LAPTOP-B09NOKLB MINGW64 ~/fantasy-contest-participation-interface (main)
+$ git fetch upstream
+From https://github.com/ashishghadigaonkar/fantasy-contest-participation-interface
+ * [new branch]      main       -> upstream/main
+
+sujal@LAPTOP-B09NOKLB MINGW64 ~/fantasy-contest-participation-interface (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+sujal@LAPTOP-B09NOKLB MINGW64 ~/fantasy-contest-participation-interface (main)
+$ git merge upstream/main
+Already up to date.
+
+sujal@LAPTOP-B09NOKLB MINGW64 ~/fantasy-contest-participation-interface (main)
+$ git push origin main
+Everything up-to-date
+
+sujal@LAPTOP-B09NOKLB MINGW64 ~/fantasy-contest-participation-interface (main)
+$ git fetch upstream
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 933 bytes | 84.00 KiB/s, done.
+From https://github.com/ashishghadigaonkar/fantasy-contest-participation-interface
+   5002ca4..548b2e3  main       -> upstream/main
+
+sujal@LAPTOP-B09NOKLB MINGW64 ~/fantasy-contest-participation-interface (main)
+$ git merge upstream/main
+Updating 5002ca4..548b2e3
+Fast-forward
+ sujal.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sujal.txt
+
+sujal@LAPTOP-B09NOKLB MINGW64 ~/fantasy-contest-participation-interface (main)
+$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Sujay-85/fantasy-contest-participation-interface.git
+   5002ca4..548b2e3  main -> main
